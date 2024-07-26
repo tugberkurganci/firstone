@@ -1,0 +1,38 @@
+/* src/styles.css veya App.css dosyasına ekleyin */
+body {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.event-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-list ul li {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.event-list ul li:hover {
+  background-color: #f1f1f1;
+}

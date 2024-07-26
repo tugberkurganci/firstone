@@ -1,0 +1,82 @@
+.homepage-container {
+  background-image: url('https://4ksiteyonetimi.com/wp-content/uploads/2021/10/site-yonetimi.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+.services-heading {
+  color: #00ff00;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.service-item {
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+  background-color: #cccccc;
+}
+
+.service-item.active {
+  background-color: #28a745; /* Green background for active service item */
+  color: #fff; /* White text color for better contrast */
+}
+
+.selected-service-card {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.event-container, .survey-container {
+  width: 30%; /* Adjusted width for event and survey containers */
+  padding: 0.5px;
+}
+
+.event-title, .survey-title {
+  color: #00ff00;
+}
+
+.event-item, .survey-item {
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent background */
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Custom green button style */
+.custom-green-button {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.custom-green-button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.selected-service-item {
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White text */
+}

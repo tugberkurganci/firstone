@@ -1,0 +1,24 @@
+/* EventStyle.css */
+/* EventStyle.css */
+.event-container {
+    background-color: transparent; /* Transparent background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* Adjust text color for better readability */
+  }
+  
+  .event-item {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .event-item h2 {
+    margin-top: 0;
+  }
+  
+  .event-item p {
+    margin: 5px 0;
+  }
+  

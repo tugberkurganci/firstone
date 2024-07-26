@@ -1,0 +1,33 @@
+/* EventStyles.css */
+.event-container, .event-card, .event-detail {
+    background-color: rgba(255, 255, 255, 0); /* Arka planı tamamen şeffaf yap */
+    box-shadow: none; /* Gölgeyi kaldır */
+    border: none; /* Kenarlık kaldır */
+  }
+  
+  .event-list-item, .event-detail, .survey-list {
+    background-color: rgba(255, 255, 255, 0.8); /* Metin kutularının arka planını yarı şeffaf yap */
+    border-radius: 10px; /* Kenarları yuvarla */
+    margin-bottom: 10px; /* Alt boşluk ekle */
+    padding: 10px; /* İç boşluk ekle */
+  }
+  
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75); /* Modal arka planı için yarı şeffaf siyah */
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Modal içeriği için yarı şeffaf arka plan */
+    padding: 20px;
+    border-radius: 10px; /* Kenarları yuvarla */
+  }
+  
+  .event-button {
+    background-color: #007bff; /* Bootstrap birincil rengi */
+    color: white;
+  }
+  
+  .event-button:hover {
+    background-color: #0056b3; /* Üzerine gelindiğinde daha koyu renk */
+  }
+  

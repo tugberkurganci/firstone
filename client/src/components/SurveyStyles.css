@@ -1,0 +1,167 @@
+/* SurveyStyles.css */
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0fff0; /* Light green background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .textarea {
+    height: 100px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .button {
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #218838;
+  }
+  
+  /* Başlık Stili */
+h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Liste Stili */
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Liste Öğesi Stili */
+.listItem {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 5px solid #00ff88; /* Sol tarafında mavi çizgi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Liste Öğesi Üzerine Gelme Stili */
+.listItem:hover {
+  background-color: #e9f5ff;
+  transform: translateX(10px); /* Sağ kaydırma efekti */
+  border-left-color: #0056b3; /* Çizginin rengini değiştir */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Liste Öğesi Aktif Stili */
+.listItem:active {
+  background-color: #cce5ff;
+  transform: translateX(5px); /* Küçük kaydırma efekti */
+}
+  .voteSummary {
+    margin-bottom: 20px;
+  }
+  
+  .voteOption {
+    display: flex;
+    align-items: center;
+  }
+  
+  .voteOption label {
+    margin-right: 10px;
+  }
+  
+ .closeButton:hover {
+    color: red;
+  }
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ /* SurveyStyles.css */
+
+/* Modal Styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* Modal content */
+.ReactModal__Content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  position: absolute; /* Changed from relative */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the modal exactly */
+  z-index: 1001; /* Ensure the modal is above the overlay */
+}
+/* Button Styles */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.listItem.selected {
+  background-color: #d3f9d8;
+}
+
+.survey-detail-container {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
