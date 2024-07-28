@@ -1,6 +1,6 @@
 # Apsiyon ServEase
 
-This project is a Spring Boot application developed to manage various tasks within Apsiyon ServEase. This document provides detailed information about setup, configuration, APIs, and Docker usage.
+Apsiyon Wallet is a robust and versatile solution designed to streamline and manage various tasks within Apsiyon ServEase. This project leverages modern technologies to deliver a comprehensive system that includes a Spring Boot application for backend services, a Node.js service utilizing the Circle SDK for blockchain-based payment transactions, and a React front-end built with Vite for the user interface. This document provides thorough information on the setup, configuration, APIs, and Docker usage, ensuring you have everything needed to get started and contribute effectively.
 
 ## Table of Contents
 
@@ -16,7 +16,8 @@ This project is a Spring Boot application developed to manage various tasks with
   - [Survey Management](#survey-management)
   - [Taxi Stand Information](#taxi-stand-information)
   - [Vehicle Management](#vehicle-management)
-- [Folder Structure](#folder-structure)
+  - [Create Wallet](#create-wallet)
+  - [Check Balance](#check-balance)
 - [Docker Usage](#docker-usage)
   - [Dockerfile](#dockerfile)
   - [Building and Running Docker Image](#building-and-running-docker-image)
@@ -38,6 +39,8 @@ This project is a Spring Boot application developed to manage various tasks with
 - **OkHttp**
 - **JSON**
 - **SpringDoc OpenAPI**
+- **Node.js 20+**
+- **Circle SDK (Node.js)**
 
 ### Front-End Technologies Used
 
@@ -265,37 +268,39 @@ This project is a Spring Boot application developed to manage various tasks with
 }
 ```
 
-## Folder Structure
+### Create Wallet
 
-client/
-├── public/
-│ ├── index.html
-│ └── ...
-├── src/
-│ ├── assets/
-│ │ └── images/
-│ ├── components/
-│ │ ├── TaxiCall.js
-│ │ ├── VehicleManager.js
-│ │ ├── SurveyEvent.js
-│ │ ├── Survey.js
-│ │ ├── Event.js
-│ │ └── styles/
-│ │ ├── TaxiCallStyles.css
-│ │ ├── VehicleManagerStyles.css
-│ │ ├── SurveyStyles.css
-│ │ └── EventStyles.css
-│ ├── lib/
-│ │ └── http.js
-│ ├── redux/
-│ │ ├── store.js
-│ │ └── authSlice.js
-│ ├── App.js
-│ ├── index.js
-│ └── ...
-├── .gitignore
-├── package.json
-└── README.md
+- **URL:** `/api/wallets`
+- **Method:** `POST`
+- **Request:**
+
+```json
+{
+  "userId": "user_id"
+}
+```
+
+- **Response:**
+
+```json
+{
+  "walletId": "wallet_id",
+  "balance": 0
+}
+```
+
+### Check Balance
+
+- **URL:** `/api/wallets/{walletId}/balance`
+- **Method:** `GET`
+- **Response:**
+
+```json
+{
+  "walletId": "wallet_id",
+  "balance": 1000
+}
+```
 
 ## Docker Usage
 
